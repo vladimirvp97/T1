@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Counter</title>
+</head>
+<body>
+
+<h1>Character Counter</h1>
+
+<form th:action="@{/countChars}" method="get">
+    <label for="inputString">Enter a string:</label><br>
+    <input type="text" id="inputString" name="input" required><br><br>
+    <button type="submit">Count Characters</button>
+</form>
+
+
+
+</body>
+</html>
